@@ -11,9 +11,10 @@ async function fetchCharacters() {
   data.results.forEach(character => {
     const listItem = document.createElement('li');
     listItem.className = 'list-group-item';
+    
     listItem.textContent = character.name;
     listItem.addEventListener('click', () => displayCharacterDetails(character));
-    characterList.appendChild(listItem);
+    characterList.appendChild(listItem)
   });
 }
 
